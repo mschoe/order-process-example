@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_0h9iob2" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <decision id="get-item-price" name="Get Item Price">
+    <decisionTable id="DecisionTable_01p8m84">
+      <input id="Input_1" label="item">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>item</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="price" typeRef="double" />
+      <rule id="DecisionRule_0ksqlaj">
+        <inputEntry id="UnaryTests_17255uc">
+          <text>"apple"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06uimhk">
+          <text>0.78</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yy4sq2">
+        <inputEntry id="UnaryTests_1pqwiup">
+          <text>"peach"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a04afd">
+          <text>1.12</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rshckx">
+        <inputEntry id="UnaryTests_0s2uv8i">
+          <text>"banana"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gcdou9">
+          <text>0.83</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qybw87">
+        <inputEntry id="UnaryTests_00aacrm">
+          <text>"pear"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11pp65h">
+          <text>0.81</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18wl6re">
+        <inputEntry id="UnaryTests_0xur9r8">
+          <text>"strawberry"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z71vpa">
+          <text>1.56</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="get-item-price">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
