@@ -26,7 +26,7 @@ console.log('new order started with ID: ', orderId);
 
 var items = ['banana', 'apple', 'peach', 'pear', 'strawberry'];
 execution.setVariable('item', items[Math.floor(Math.random()*items.length)]);
-execution.setVariable('quantity', Math.floor(Math.random() * 100));</bpmn:script>
+execution.setVariable('quantity', Math.floor(Math.random() * 500));</bpmn:script>
     </bpmn:scriptTask>
     <bpmn:scriptTask id="Activity_1gr7a6o" name="Fetch Goods" camunda:asyncBefore="true" scriptFormat="javascript">
       <bpmn:incoming>Flow_1y1gh8m</bpmn:incoming>

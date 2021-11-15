@@ -11,7 +11,7 @@ client.subscribe('request-payment', async function({ task, taskService }) {
   const amount = task.variables.get('amount');
 
   try {
-    const {body} = await got.post('http://localhost:8090/engine-rest/engine/default/message', {
+    const {body} = await got.post('http://localhost:8080/engine-rest/engine/default/message', {
       json: {
         "messageName" : "paymentMessage",
         "businessKey" : orderId,
